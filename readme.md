@@ -25,3 +25,15 @@ Sobre Matplotlib
 Sobre numpy
 [Ver documentación](https://numpy.org/es/install/)
 
+### Recuerda que...
+El ambiente virtual debe describirse en el archivo .gitignore para que no se suba al repositorio remoto esos archivos, de lo contrario deberás hacer lo siguiente:
+
+git rm -r --cached venv
+
+venv: Es el nombre del archivo de tu ambiente virtual
+
+git add .
+
+git commit -m "Eliminando venv del seguimiento de Git"
+
+git push origin main
